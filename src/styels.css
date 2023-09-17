@@ -1,9 +1,21 @@
+p {
+    color: white;
+}
+
+
 .bg {
     background-color: #232628;
 }
 
 .float {
     float: left;
+}
+
+.box {
+    border: #1a1c1e solid 5px;
+    border-radius: 5px;
+    background-color: #1a1c1e;
+    padding: 10px;
 }
 
 .star {
