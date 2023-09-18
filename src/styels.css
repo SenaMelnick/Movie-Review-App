@@ -14,7 +14,10 @@ h2 {
 .score {
     text-decoration: underline;
     color: orange;
-    
+}
+
+.plus {
+    height: 100px;
 }
 
 .bg {

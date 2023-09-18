@@ -11,9 +11,14 @@ export default class ReviewForm extends React.Component {
     render() {
         return (
             <form>
-                <input type="text">Write your review here</input>
-                <button type="submit">Submit</button>
+                <textarea className="form-control plus" type="text" placeholder="Write your review here..."/>
+                <br/>
+                <button className="btn btn-primary" type="submit" onClick={this.addReview()}>Submit</button>
             </form>
-        )
+        );
+    };
+
+    addReview() {
+        let list = document.getElementById('#review-holder');
     }
 }
