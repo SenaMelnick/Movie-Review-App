@@ -12,10 +12,11 @@ export default class ReviewList extends React.Component {
 
     render() {
         return (
-            <div className="box" id="review-holder">
+            <div className="box">
                 <Review {...this.state.reviews[0]}></Review>
                 <hr className="white"></hr>
                 <Review {...this.state.reviews[1]}></Review>
+                <div id="new-reviews"></div>
                 <hr className="white"></hr>
                 <ReviewForm/>
             </div>
