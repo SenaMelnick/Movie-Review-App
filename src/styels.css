@@ -1,7 +1,21 @@
-p {
+p, b {
     color: white;
 }
 
+h2 {
+    color: white;
+}
+
+
+.white {
+    color: white;
+}
+
+.score {
+    text-decoration: underline;
+    color: orange;
+    
+}
 
 .bg {
     background-color: #232628;

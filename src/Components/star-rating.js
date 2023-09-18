@@ -4,7 +4,7 @@ export default class StarRating extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            rating: props.userRating,
+            rating: props.rating,
             id: props.id
         };
     };

@@ -4,24 +4,27 @@ export default class Review extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            
+            user: props.user,
+            time: props.timeStamp,
+            content: props.content
         };
     };
 
     render() {
         return (
-            <div className="box ">
+            <div>
                 <div className="row">
                     <div className="col-1">
-                        <p>Username</p>
+                        <b>{this.state.user}</b>
                     </div>
                     <div className="col-10"></div>
                     <div className="col-1">
-                        <p>Time</p>
+                        <b>{this.state.time}</b>
                     </div>
                 </div>
+                <br></br>
                 <div className="row">
-                    <p>Review Content</p>
+                    <p>{this.state.content}</p>
                 </div>
             </div>
         )
