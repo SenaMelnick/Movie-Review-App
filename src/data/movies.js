@@ -25,14 +25,27 @@ export let movies = [
 
 
     {
-     name: "The Wheel of Time",
-     director: "Robert Jorden",
-     score: "300,147",
-     synopsis: "",
-     cover: [],
-     bigCover: "",
-     userRating: "",
-     id: "1"
+        name: "The Disappearance of Haruhi Suzumiya",
+        director: "Tatsuya Ishihara",
+        score: "77%",
+        synopsis: "It is mid-december, and SOS Brigade chief Haruhi Suzumiya announces that the Brigade is going to hold a Christmas party in their clubroom, with Japanese hotpot for dinner. The brigade members Kyon, Yuki Nagato, Mikuru Asahina and Itsuki Koizumi start preparing everything for the party, such as costumes and decorations. But a couple of days later, Kyon arrives at school only to find that Haruhi is missing. Not only that, but Mikuru claims she has never known Kyon before, Koizumi is also missing, and Yuki has become the sole member of the literature club. The SOS Brigade seems to have never existed, nor has Haruhi Suzumiya. No one in the school has ever heard about her… except for Kyon.",
+        cover: "img/sw-cover.jpg",
+        userRating: null,
+        reviews: [
+           {
+               user: "UniqueParticle",
+               timeStamp: "16/1/2020",
+               content: "So much amazing action and beautiful cinematography makes for such an enlightening experience! In The Empire Strikes Back you know who everyone is which is great plus Yoda is introduced! I love this movie the music is soothing, there's romance, more of Darth Vader, and introduces Emperor Palpatine what more can you ask for? A lot to relish and get excited about; it's such a classic gem."
+           },
+           {
+               user: "Xstal",
+               timeStamp: "4/4/2023",
+               content: `Yavin 4 had been discovered so they fled, three years later and it's Hoth where rebels tread, Luke Skywalker's on patrol, when a Wampa takes control, leaves him hanging in its cave to have with bread. He escapes into the blizzard and the cold, has a vision from a friend where he is told, seek to train from Master Yoda, find him on planet Dagobah, Han arrives, and slips him in a Tauntaun fold. A droid informs the Empire what it's found, leaves the rebels little time to hang around, first protect the energy field, that provides the bases shield, as off to Hoth, Imperial forces bound.
+   
+               It's a game of cat and mouse, as the rebels seek to avoid capture and Luke develops his Jedi skills while learning some pertinent family history but becomes a little less dexterous (for the time being).`
+           }
+        ],
+        id: "0"
     },
     {
      name: "The Wheel of Time",

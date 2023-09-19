@@ -50,7 +50,7 @@ export default class Movie extends React.Component {
             </div>
             <br/>
 
-            <ReviewList {...this.state}></ReviewList>
+            <ReviewList {...this.state.reviews}></ReviewList>
         </div>
         )
     }
