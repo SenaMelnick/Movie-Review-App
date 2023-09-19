@@ -1,3 +1,5 @@
+//All data sourced from either https://www.imdb.com or https://www.themoviedb.org.
+
 export let movies = [
     {
      name: "Star Wars: The Empire Strikes Back",

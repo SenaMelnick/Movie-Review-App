@@ -92,9 +92,12 @@ export default class StarRating extends React.Component {
                 };
         };
     };
+    //This function checks both the star number and what rating was passed in through props to decide if the star is blank or lit
 
     setRating(starNum) {
         this.setState({rating: starNum});
     };
+    //Updates the rating state to the star number that was clicked. 
+    //This does not update the rating in the movies.js database 
 
 };

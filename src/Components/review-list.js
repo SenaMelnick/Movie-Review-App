@@ -32,5 +32,6 @@ export default class ReviewList extends React.Component {
 
     pickId() {
         return `new-reviews-${this.state.id}`
-    }
+    };
+    //sets the id of the new-reviews div, where reviews added by the user are stored
 };

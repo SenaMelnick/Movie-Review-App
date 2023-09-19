@@ -2,14 +2,11 @@ p, b {
     color: white;
 }
 
-h2 {
-    color: white;
-}
-
 
 .white {
     color: white;
 }
+/*This class was needed because for some reason, adding <hr> or any of <h1-h5> into the same CSS selecter as <p> and <b> wasn't working. I haven't svoled that issue but this works well enough*/
 
 .score {
     text-decoration: underline;
@@ -114,3 +111,5 @@ h2 {
     transform: rotate(-70deg);
     content:"";
    }
+
+   /*this star CSS was taken from an example on https://www.coding-dude.com/wp/css/css-star/.*/
