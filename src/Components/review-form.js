@@ -6,7 +6,7 @@ export default class ReviewForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            id: props
+            id: props.id
         };
     };
 
@@ -15,7 +15,7 @@ export default class ReviewForm extends React.Component {
     render() {
         return (
             <form>
-                <textarea className="form-control plus" type="text" placeholder="Write your review here..." id="input"/>
+                <textarea className="form-control plus" type="text" placeholder="Write your review here..." id={this.pickId()}/>
                 <br/>
                 <button className="btn btn-primary" type="button" onClick={() => this.addReview()}>Submit</button>
             </form>
@@ -25,12 +25,15 @@ export default class ReviewForm extends React.Component {
 
     addReview() {
         let list = ReactDOM.createRoot(document.getElementById(`new-reviews-${this.state.id}`));
-        console.log(list);
         list.render(
             <div>
                 <hr className="white"></hr>
-                <Review user="Sena" timeStamp="18/9/2023" content={document.getElementById('input').value}/>
+                <Review user="Sena" timeStamp="18/9/2023" content={document.getElementById(`input-${this.state.id}`).value}/>
             </div>
         );
+    };
+
+    pickId() {
+        return `input-${this.state.id}`;
     };
 };

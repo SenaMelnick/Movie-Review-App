@@ -17,8 +17,8 @@ export default class Review extends React.Component {
                     <div className="col-1">
                         <b>{this.state.user}</b>
                     </div>
-                    <div className="col-10"></div>
-                    <div className="col-1">
+                    <div className="col-9"></div>
+                    <div className="col-2">
                         <b>{this.state.time}</b>
                     </div>
                 </div>

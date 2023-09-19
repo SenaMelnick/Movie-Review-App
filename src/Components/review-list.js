@@ -13,13 +13,19 @@ export default class ReviewList extends React.Component {
 
     render() {
         return (
-            <div className="box">
-                <Review {...this.state.reviews[0]}></Review>
-                <hr className="white"></hr>
-                <Review {...this.state.reviews[1]}></Review>
-                <div id={this.pickId()}></div>
-                <hr className="white"></hr>
-                <ReviewForm {...this.state.id}/>
+            <div className="row">
+                <div className="col-2"></div>
+                <div className="col-8">
+                    <div className="box">
+                        <Review {...this.state.reviews[0]}></Review>
+                        <hr className="white"></hr>
+                        <Review {...this.state.reviews[1]}></Review>
+                        <div id={this.pickId()}></div>
+                        <hr className="white"></hr>
+                        <ReviewForm {...this.state}/>
+                    </div>
+                </div>
+                <div className="col-2"></div>
             </div>
         );
     };
