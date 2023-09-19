@@ -6,6 +6,7 @@ export default class ReviewForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
+            id: props
         };
     };
 
@@ -23,7 +24,8 @@ export default class ReviewForm extends React.Component {
 
 
     addReview() {
-        let list = ReactDOM.createRoot(document.getElementById('new-reviews'));
+        let list = ReactDOM.createRoot(document.getElementById(`new-reviews-${this.state.id}`));
+        console.log(list);
         list.render(
             <div>
                 <hr className="white"></hr>

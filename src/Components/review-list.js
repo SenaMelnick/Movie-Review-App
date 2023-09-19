@@ -6,7 +6,8 @@ export default class ReviewList extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            reviews: props
+            reviews: props.reviews,
+            id: props.id
         };
     };
 
@@ -16,10 +17,14 @@ export default class ReviewList extends React.Component {
                 <Review {...this.state.reviews[0]}></Review>
                 <hr className="white"></hr>
                 <Review {...this.state.reviews[1]}></Review>
-                <div id="new-reviews"></div>
+                <div id={this.pickId()}></div>
                 <hr className="white"></hr>
-                <ReviewForm/>
+                <ReviewForm {...this.state.id}/>
             </div>
-        )
+        );
+    };
+
+    pickId() {
+        return `new-reviews-${this.state.id}`
     }
-}
+};

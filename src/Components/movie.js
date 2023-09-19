@@ -12,7 +12,8 @@ export default class Movie extends React.Component {
             synopsis: props.synopsis,
             score: props.score,
             rating: props.userRating,
-            reviews: props.reviews
+            reviews: props.reviews,
+            id: props.id
         };
     };
 
@@ -50,7 +51,7 @@ export default class Movie extends React.Component {
             </div>
             <br/>
 
-            <ReviewList {...this.state.reviews}></ReviewList>
+            <ReviewList {...this.state}></ReviewList>
         </div>
         )
     }
